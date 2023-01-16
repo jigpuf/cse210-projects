@@ -4,11 +4,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        int choice = 0;
-        while(choice != 5){
-            Console.WriteLine("What is your first name?");
-            choice = int.Parse(Console.ReadLine());
-        }
-        Console.WriteLine("Thanks for playing!");
+        Fraction noParam = new Fraction();
+            noParam.getFrac();
+            noParam.getDec();
+        Fraction topOnly = new Fraction(5);
+            topOnly.getFrac();
+            topOnly.getDec();
+        Fraction threeFourths = new Fraction(4,3);
+            threeFourths.getFrac();
+            threeFourths.getDec();
+        Fraction oneThird = new Fraction(3,1); 
+            oneThird.getFrac();
+            oneThird.getDec();
+
+
+            
+
+
+
     }
 }
