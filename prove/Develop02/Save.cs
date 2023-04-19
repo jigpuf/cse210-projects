@@ -5,7 +5,7 @@ public class Save
 {   
     public void getFileName()
     {
-                Console.WriteLine("WHat is the name of the file we will save to?");
+                Console.WriteLine("What is the name of the file we will save to?");
                 string saveFileName = Console.ReadLine();
                 string workingFile="workingFile.txt";
                     string[] lines = System.IO.File.ReadAllLines(workingFile);
