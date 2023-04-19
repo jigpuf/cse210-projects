@@ -11,7 +11,7 @@ string prompt;
         "What super Power would you choose?"
         };
         Random rnd = new Random();
-        index =  rnd.Next(5);
+        index =  rnd.Next(7);
         prompt = prompts[index];
         Console.WriteLine($"{prompt}");
         Console.Write(">");

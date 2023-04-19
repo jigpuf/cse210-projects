@@ -5,36 +5,50 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         int choice = 0;
         while(choice != 6){
-                Options instance = new Options();
-                instance.displayOptions();
+                Console.WriteLine("\n1) Write to Working File");
+                Console.WriteLine("2) Display Working File");
+                Console.WriteLine("3) Load Another File");
+                Console.WriteLine("4) Save to Another File");
+                Console.WriteLine("5) Clear Working File");
+                Console.WriteLine("6) Quit");
+                Console.WriteLine("7) Clear Console");
+                Console.Write("Choose one: ");
                 choice = int.Parse(Console.ReadLine());
-            if(choice == 1){
-                Write message = new Write();
-                message.displayPrompt();
-                message.getEntry();
-            }
-            else if(choice ==2){
-                Display message = new Display();
-                message.getData();
-            }
-            else if(choice ==3){
-                Load message = new Load();
-                message.displayLoad();               
-            }
-            else if(choice ==4){
-                Save message = new Save();
-                message.getFileName();                
-            }
-            else if(choice ==5){
-                Clear clear = new Clear();
-                clear.clearWorkingFile();                
-            }
-            else if(choice ==6){
-                Quit message = new Quit();
-                message.displayQuit();
-            }
+                switch(choice){
+                    case 1:
+                        Write message = new Write();
+                        message.displayPrompt();
+                        message.getEntry();
+                        break;
+                    case 2:
+                        Display display = new Display();
+                        display.getData();
+                        break;
+                    case 3:
+                        Load load = new Load();
+                        load.displayLoad();
+                       break;
+                    case 4:
+                    Save save = new Save();
+                        save.getFileName();
+                        break;
+                    case 5:
+                        using (StreamWriter outputFile = new StreamWriter("workingFile.txt"))
+                        outputFile.WriteLine("");
+                       break;
+                    case 6:
+                        Console.WriteLine("Thanks for playing!");
+                       break;
+                    case 7:
+                        Console.Clear();
+                        break;
+                    default:
+                        Console.WriteLine("Pick a real number!!!");
+                        break;
+                }
         }
     }
 }
