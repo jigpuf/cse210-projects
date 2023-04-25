@@ -2,30 +2,31 @@ using System.IO;
 
 public class Display
 {   
-   private string[] _ActiveText;
-   private string[] _Words;
+   private string[] _activeText;
+   private string[] _words;
    public void SetActiveText(){
       string fileName="scripture.txt";
-        _ActiveText = System.IO.File.ReadAllLines(fileName);
-        _Words = _ActiveText[0].Split(' ');
-        Console.Write(_ActiveText[0]);
+        _activeText = System.IO.File.ReadAllLines(fileName);
+        _words = _activeText[0].Split(' ');
+        Console.Write(_activeText[0]);
    }
    public void ChangeActiveText(){
-       int length = _Words.Length;
+       int length = _words.Length;
        Random rnd = new Random();
         int index =  rnd.Next(1,length);
-        if (_Words[index]!="_"){
-         _Words[index] = "_";
+        if (_words[index]!="_"){
+         _words[index] = "_";
         } 
         else{
-         while(_Words[index]=="_"){
+         while(_words[index]=="_"){
             Random advance = new Random();
             index =  advance.Next(1,length);
         } 
-         _Words[index] = "_";
+        //Try for loop here that stops after 1000 attemps and ends program
+         _words[index] = "_";
         }
            
-      foreach (string word in _Words){
+      foreach (string word in _words){
                 Console.Write($"{word} ");
             }
 

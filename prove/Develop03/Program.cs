@@ -26,6 +26,6 @@ class Program
         }
         //quit program
         Quit message = new Quit();
-            message.displayQuit();
+            message.DisplayQuit();
     }
 }

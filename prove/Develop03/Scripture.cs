@@ -1,5 +1,5 @@
 public class Scripture
-{   private int _Index;
+{   private int _index;
     private string[] _scriptures={
         "Moses_1:39 For behold, this is my work and my glory—to bring to pass the immortality and eternal life of man.",
         "Matthew_5:48 Be ye therefore perfect, even as your Father which is in heaven is perfect.",
@@ -10,7 +10,7 @@ public class Scripture
     public void SetActiveScripture()
     {        
         Random rnd = new Random();
-        _Index =  rnd.Next(3);
+        _index =  rnd.Next(3);
 
     }
      public void WriteActiveScripturetoFile()
@@ -18,7 +18,7 @@ public class Scripture
         //write to file _sriptures[_index]
         using (StreamWriter outputFile = new StreamWriter("scripture.txt"))
         {
-            outputFile.WriteLine($"{_scriptures[_Index]}");
+            outputFile.WriteLine($"{_scriptures[_index]}");
         }
     }
 
