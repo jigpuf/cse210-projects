@@ -13,3 +13,5 @@ Moves the data from a saved file into the active list so it can be cleared or ad
 Clears active list
 6. Quit
 Clears active list and closes  program
+7. Clear Console
+Just clears the console in case it is getting overwhelming

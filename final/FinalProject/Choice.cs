@@ -12,6 +12,8 @@ public class Choice
             Console.WriteLine("  4. Load list from file");
             Console.WriteLine("  5. Clear Active List");
             Console.WriteLine("  6. Quit");
+            Console.WriteLine("  7. Clear Console");
+
 
             Console.Write("Select a choice from the menu:");
             _choice = Console.ReadLine();
@@ -40,6 +42,9 @@ public class Choice
                         QuitProgram quit = new QuitProgram();
                         quit.quit();
                         break;
+                    case "7":
+                        Console.Clear();
+                        break;   
                     default:
                         Console.WriteLine("Pick a real number!!!");
                         break;
