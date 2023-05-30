@@ -1,6 +1,6 @@
 using System;
 
-public class Music : Url
+public class Music : Website
 {
 private string _genre = "";
 

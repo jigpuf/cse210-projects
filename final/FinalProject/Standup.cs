@@ -1,6 +1,6 @@
 using System;
 
-public class Standup : Url
+public class Standup : Website
 {
     private string _subject = "";
     public string setSubject(){

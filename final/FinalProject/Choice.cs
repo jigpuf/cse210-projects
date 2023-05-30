@@ -33,8 +33,8 @@ public class Choice
                         load.loadFile();
                         break;
                     case "5":
-                        ClearActive clear = new ClearActive();
-                        clear.clear();
+                        QuitProgram clear = new QuitProgram();
+                        clear.quit("clear");
                         break;
                     case "6":
                         QuitProgram quit = new QuitProgram();

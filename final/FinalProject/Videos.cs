@@ -1,6 +1,5 @@
 using System;
-
-public class Videos : Url
+public class Videos : Website
 { 
     private string _genre = "";
 

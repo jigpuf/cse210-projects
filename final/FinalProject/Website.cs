@@ -1,6 +1,6 @@
 using System;
 
-public class Url
+public class Website
 {
 
     public string setUrl(string type){

@@ -7,4 +7,8 @@ public class QuitProgram
         using (StreamWriter outputFile = new StreamWriter("workingFile.txt"))
         outputFile.Write("");   
     }
+    public void quit(string clear){
+        using (StreamWriter outputFile = new StreamWriter("workingFile.txt"))
+        outputFile.Write(""); 
+    }
 }

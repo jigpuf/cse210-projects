@@ -1,6 +1,6 @@
 using System;
 
-public class CoolSites : Url
+public class CoolSites : Website
 {
     private string _genre = "";
 
