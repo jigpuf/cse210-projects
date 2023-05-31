@@ -3,18 +3,18 @@ using System;
 public class Talks : Website
 {
     private string _subject = "";
-    public string setSubject(){
+    public string SetSubject(){
         Console.WriteLine($"What subject is covered in this talk?");
         Console.Write(">");
         _subject = Console.ReadLine();
         return (_subject);
     }
 
-    public void getData(string type){
-        string url = setUrl(type);
-        string title = setTitle(type);
-        string year = setYear(type);
-        string subject = setSubject();
+    public void GetData(string type){
+        string url = SetUrl(type);
+        string title = SetTitle(type);
+        string year = SetYear(type);
+        string subject = SetSubject();
         string entry = ($"{type}-{title}  year:{year} url:{url} subject:{subject}");
         Console.WriteLine(entry);
         string fileName = "workingFile.txt";

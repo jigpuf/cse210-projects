@@ -6,6 +6,6 @@ class Program
     {
         Console.Clear();
         Choice choice = new Choice();
-        choice.displayChoices();
+        choice.DisplayChoices();
     }
 }

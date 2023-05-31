@@ -4,18 +4,18 @@ public class Music : Website
 {
 private string _genre = "";
 
-    public string setGenre(){
+    public string SetGenre(){
         Console.WriteLine($"What Genre is this song?");
         Console.Write(">");
         _genre = Console.ReadLine();
         return (_genre);
     }
 
-    public void getData(string type){
-        string url = setUrl(type);
-        string title = setTitle(type);
-        string genre = setGenre();
-        string year = setYear(type);
+    public void GetData(string type){
+        string url = SetUrl(type);
+        string title = SetTitle(type);
+        string genre = SetGenre();
+        string year = SetYear(type);
         string entry = ($"{type}-{title} year:{year} url:{url} genre:{genre}");
         Console.WriteLine(entry);
         string fileName = "workingFile.txt";

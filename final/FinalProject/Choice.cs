@@ -3,7 +3,7 @@ using System;
 public class Choice
 {
     private string _choice = "0";
-    public void displayChoices(){
+    public void DisplayChoices(){
          while(_choice != "6"){
             Console.WriteLine("Menu Options:"); 
             Console.WriteLine("  1. Add to active list");
@@ -20,27 +20,27 @@ public class Choice
             switch(_choice){
                     case "1":
                         MediaType media = new MediaType();
-                        media.displayChoices();
+                        media.DisplayChoices();
                         break;
                      case "2":
                         Display display = new Display();
-                        display.getData();
+                        display.GetData();
                         break;
                     case "3":
                         Save save = new Save();
-                        save.save();
+                        save.SaveFile();
                        break;
                     case "4":
                         Load load = new Load();
-                        load.loadFile();
+                        load.LoadFile();
                         break;
                     case "5":
                         QuitProgram clear = new QuitProgram();
-                        clear.quit("clear");
+                        clear.Quit("clear");
                         break;
                     case "6":
                         QuitProgram quit = new QuitProgram();
-                        quit.quit();
+                        quit.Quit();
                         break;
                     case "7":
                         Console.Clear();

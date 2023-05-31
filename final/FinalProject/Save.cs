@@ -3,7 +3,7 @@ using System.IO;
 
 public class Save
 {   
-    public void save()
+    public void SaveFile()
     {
                 Console.WriteLine("What is the name of the file we will save to?");
                 string saveFileName = Console.ReadLine();

@@ -1,6 +1,6 @@
 public class Load
 {   //This will load the requested file into the working file
-    public void loadFile()
+    public void LoadFile()
     {
                 Console.WriteLine("What file would you like to load into your working file?");
                 string loadFile = Console.ReadLine();

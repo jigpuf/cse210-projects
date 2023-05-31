@@ -2,7 +2,7 @@ using System.IO;
 
 public class Display
 {   
-    public void getData(){
+    public void GetData(){
         Console.Clear();
         string fileName="workingFile.txt";
         string[] lines = System.IO.File.ReadAllLines(fileName);
